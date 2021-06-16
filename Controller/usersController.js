@@ -4,7 +4,7 @@ const response = require("./../response");
 const db = require("./../settings/db");
 
 exports.users = (req, res) => {
-	db.query("SELECT * FROM users ", (error, rows, fields) => {
+	db.query("SELECT * FROM table_name ", (error, rows, fields) => {
 		if (error) {
 			console.log(error);
 		} else {
